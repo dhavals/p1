@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+    <script src='Accelerometer.js'></script>
+    <script src='GameAccel.js'></script>
+    <script src='Util.js'></script>
+    <title> Accelerometer Game </title>
+</head>
+<body>
+    <h1 id="points">Score: 0</h1>
+    <hr>
+    <div id="gameDiv">
+
+        <table id="gameTable">
+            <tr>
+                <th>Dimension</th>
+                <th>Target</th>
+                <th>Observed</th>
+                <th>Difference</th>
+            </tr>
+            <tr id="xRow">
+                <td>x</td>
+                <td id="xTarget"></td>
+                <td id="xObserved"></td>
+                <td id="xDifference"></td>
+            </tr>
+            <tr id="yRow">
+                <td>y</td>
+                <td id="yTarget"></td>
+                <td id="yObserved"></td>
+                <td id="yDifference"></td> 
+            </tr>
+            <tr id="zRow">
+                <td>z</td>
+                <td id="zTarget"></td>
+                <td id="zObserved"></td>
+                <td id="zDifference"></td>
+            </tr>
+        </table>
+
+        <div id="buttons">
+            <button id="randomize">Randomize</button>
+            <button id="start">Start Over</button>
+            <button id="score">Score!</button>
+        </div>
+    </div>
+</body>
+</html>
