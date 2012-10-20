@@ -28,11 +28,22 @@ window.onload = function(){
     {
         accelerometer = new Accelerometer();
         accelerometer.startListening();
+        
+        $('#randomize').click(function(){
+            setRandomTargets();
+        });
     }
 
     function initGame()
     {
+        setRandomTargets();
+    }
 
+    function setRandomTargets()
+    {
+        targetValues.x = Math.floor((Math.random()*21) - 10);
+        targetValues.y = Math.floor((Math.random()*21) - 10);
+        targetValues.z = Math.floor((Math.random()*21) - 10);
     }
 
     function runGame()
